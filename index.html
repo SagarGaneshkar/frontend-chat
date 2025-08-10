@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>i Chat - Realtime Node Socket.io Chat App</title>
+
+  <!-- Socket.IO client script (served from Node server) -->
+  <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+
+  <!-- Your client-side JS -->
+  <script defer src="js/client.js"></script>
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <nav>
+   
+    <img class="logo" src="chat.png" alt="Chat App Logo" width="50" height="50" />
+     <h1>Welcome to iChat App</h1>
+  </nav>
+
+  <div class="container">
+    <!-- Messages will be dynamically inserted here -->
+  </div>
+
+  <div class="send">
+    <form action="#" id="send-container">
+      <input type="text" name="messageInp" id="messageInp" placeholder="Type your message..." autocomplete="off" required />
+      <button class="btn" type="submit">Send</button>
+    </form>
+  </div>
+</body>
+</html>
