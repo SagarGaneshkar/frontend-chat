@@ -1,11 +1,12 @@
 // Connect to the Socket.IO server
-//const socket = io("http://localhost:8000");
 const socket = io("https://backend-chat-nifw.onrender.com");
+
 // DOM Elements
 const form = document.getElementById("send-container");
 const messageInput = document.getElementById("messageInp");
 const messageContainer = document.querySelector(".container");
 var audio = new Audio("ting.mp3");
+
 // Append message to chat container
 const append = (message, position) => {
   if (!message || message.trim() === "") return;
